@@ -1,0 +1,12 @@
+rootProject.name = 'FaceRecognition'
+include ':react-native-biometrics'
+project(':react-native-biometrics').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-biometrics/android')
+include ':react-native-bio-id'
+project(':react-native-bio-id').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-bio-id/android')
+include ':react-native-facerecognition'
+project(':react-native-facerecognition').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-facerecognition/android/app')
+include ':react-native-touch-id'
+project(':react-native-touch-id').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-touch-id/android')
+include ':openCV'
+project(':openCV').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-facerecognition/android/openCV')
+include ':app'
